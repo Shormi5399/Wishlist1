@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         buy = (Button) findViewById(R.id.buyall);
         builder = new AlertDialog.Builder(this);
+        //this code is for backbutton
+         if(getSupportActionBar()!=null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         buy.setOnClickListener(new View.OnClickListener() {
             @Override
